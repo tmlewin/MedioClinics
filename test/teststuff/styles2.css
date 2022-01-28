@@ -1,0 +1,25 @@
+.app-c-tabs {
+    background-color: #dedede;
+    padding: 1rem;
+  }
+  .app-c-tabs__tab-header {
+    display: flex;
+  }
+  .app-c-tabs__tab-header-item {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    flex: 1;
+    padding: 1rem;
+  }
+  .app-c-tabs__tab-header-item:focus {
+  }
+  .app-c-tabs__tab-header-item[aria-selected=true] {
+    background-color: #fff;
+    border-bottom: 0;
+  }
+  
+  .app-c-tabs__tab-panels {
+    background-color: #fff;
+    padding: 1rem 2rem;
+  }

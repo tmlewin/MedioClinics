@@ -1,0 +1,27 @@
+<connectionStrings configSource="ConnectionStrings.config"></connectionStrings>
+<connectionStrings>
+  <clear />
+  <add name="CMSConnectionString" connectionString="Data Source=localhost;Initial Catalog=MedioClinic13;Integrated Security=True;Persist Security Info=False;Connect Timeout=60;Encrypt=False;Current Language=English;" />
+</connectionStrings>
+
+
+
+{
+  "ConnectionStrings": {
+    "CMSConnectionString": "Data Source=localhost;Initial Catalog=MedioClinic13;Integrated Security=True;Persist Security Info=False;Connect Timeout=60;Encrypt=False;Current Language=English;"
+  },
+  "CMSHashStringSalt": "86576e23-4907-4494-a221-560c6f69a309"
+}
+
+Create a development settings file
+Navigate to the MedioClinic subfolder where source files for the live site application reside.
+Open the appsettings.json file.
+In the same folder, create a new "appsettings.Development.json" file.
+Create a CMSHashStringSalt string property with a value from the appsettings.json file.
+Create a new ConnectionStrings object property.
+Inside the ConnectionStrings property paste the CMSConnectionString property from the appsettings.json file.
+Do the same with the CMSHashStringSalt entry.
+In the appsettings.json file, replace the original values of CMSConnectionString and CMSHashStringSalt in appsettings.json with "null" (without quotes).
+
+
+kentico setup
